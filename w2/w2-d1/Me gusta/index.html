@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Me gusta</title>
+</head>
+<body>
+    <header>
+        <h2>Network</h2>
+    </header>
+    <main>
+        <h1>Your Feed</h1>
+        <div class="principalUserCard generalBorder">
+            <img src="assets/user.png" alt="user image">
+            <a href="#">add an avatar</a>
+            <h2>James Doe</h1>
+        </div>
+        <div class="othersUsersCards-container">
+            <div class="otherUserCard generalBorder">
+                <h3 class="otherUser-name">Neil M</h3>
+                <p id="neil"class="otherUser-likes">9 like(s)</p>
+                <button data-userName="neil" class="otherUser-likeBtn generalBorder genrealShadow">Like</button>
+                <p class="otherUser-text">I just set up this new discord bot, let me know what you all think</p>
+            </div>
+            <div class="otherUserCard generalBorder">
+                <h3 class="otherUser-name">Nichole K</h3>
+                <p id="nichole"class="otherUser-likes">12 like(s)</p>
+                <button data-userName="nichole" class="otherUser-likeBtn generalBorder genrealShadow">Like</button>
+                <p class="otherUser-text">Just finished my <a href="#">next comic</a>, check it out</p>
+            </div>
+            <div class="otherUserCard generalBorder">
+                <h3 class="otherUser-name">Jim R</h3>
+                <p id="jim"class="otherUser-likes">9 likes(s)</p>
+                <button data-userName="jim" class="otherUser-likeBtn generalBorder genrealShadow">Like</button>
+                <p class="otherUser-text">I cant`t stop listening to the <a href="#">new album</a> who else id liking it?</p>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+body, h1, h2, h3, h4, p, ul{
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}
+button, li{
+    cursor: pointer;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Itim', cursive;
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    background-color:rgb(170, 188, 248);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 20rem;
+}
+header h2{
+    font-size: 2.5rem;
+}
+header nav{
+    width: 40%;
+}
+header ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    padding: 0%;
+    justify-content: flex-end;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+
+main{
+    padding: 1rem 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.cityName-Container{
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    border-bottom: 4px solid black;
+}
+.cityName-Name{
+    font-size: 2.25rem;
+}
+.cityName-tmp-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+.cityName-tmp-container p{
+    font-size: 1.25rem;
+}
+.cityName-tmp-container select,
+.cityName-tmp-container option{
+    font-size: 1.25rem;
+}
+
+
+.dayCard{
+    width: 22.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    padding: 1.25rem;
+}
+.dayCard--day{
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+.dayCard--img--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+.dayCard--img{
+    width: 4.5rem;
+}
+.dayCard--description{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+.dayCard--Temps--container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.dayCard--maxTemp{
+    color: red;
+}
+.dayCard--minTemp{
+    color: blue;
+}
+
+
+.cookiesAlert{
+    /* position: absolute; */
+    position: fixed;
+    bottom: 0.5rem;
+    background-color: rgb(235, 235, 235);
+    width: 42.5rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-between;
+    border: 3px solid black;
+}
+.cookiesAlert img{
+    width: 3rem;
+}
+.cookiesAlert div{
+    width: 70%;
+    font-size: 1.05rem;
+}
+.cookiesAlert div h4{
+    width: 70%;
+    font-size: 1.25rem;
+}
+.cookiesAlert button{
+    padding:0.5rem;
+    background-color:rgb(64, 187, 224);
+    font-weight: bold;
+    border: 3px solid black;
+    box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
+    font-family: 'Itim', cursive;
+    font-size: 1rem;
+}
+
+
+.dNone{
+    display: none;
+}

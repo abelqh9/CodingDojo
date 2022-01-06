@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+body, h1, h2, h3, p{
+    margin: 0;
+}
+
+
+body{
+    padding: 0 17.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Itim', cursive;
+}
+
+
+.header{
+    background-color: rgb(192, 190, 190);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.header h1{
+    font-size: 2.75rem;
+}
+.header input{
+    width: 40%;
+    height: 2rem;
+    font-size: 1rem;
+}
+.header input::placeholder{
+    font-family: 'Itim', cursive;
+    font-size: 1rem;
+}
+.header button{
+    font-size: 1.05rem;
+    color: white;
+    background-color: rgb(52, 52, 255);
+    padding: 0.25rem 0.75rem;
+    font-family: 'Itim', cursive;
+    cursor: pointer;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 67.5%;
+}
+
+
+
+.aside{
+    width: 30%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.aside h3{
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+}
+.aside button{
+    height: 2.25rem;
+    width: 100%;
+    font-size: 1.15rem;
+    background-color:rgb(145, 172, 98) ;
+    cursor: pointer;
+}
+
+
+.generalPadding{
+    padding: 1.25rem;
+}
+.generalBorder{
+    border: 3px solid black;
+}
+.genrealShadow{
+    box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
+}
+.visibility-h{
+    visibility: hidden;
+}
+
+
+/* DEF CARD STYLES */
+.defCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.defCard-wordCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 5rem;
+    margin-right: 2rem;
+}
+.wordCont-word{
+    font-size: 2.35rem;
+}
+.wordCont-pronuntiation{
+    font-size: 1.35rem;
+}
+.wordCont-plural{
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+}
+.wordCont-btn{
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    width: 6rem;
+    background-color:rgb(245, 222, 122);
+}
+.defCard-defCont{
+    width: 20rem;
+}
+.defCard-defCont p{
+    font-size: 1.35rem;
+    font-weight: 600;
+}

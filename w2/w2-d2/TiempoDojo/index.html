@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>TiempoDojo</title>
+</head>
+<body>
+    <header>
+        <h2>DojoWeather</h2>
+        <nav>
+            <ul>
+                <li>Burbank</li>
+                <li>Chigago</li>
+                <li>Dallas</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="cityName-Container">
+            <h1 class="cityName-Name">San Jose</h1>
+            <div class="cityName-tmp-container">
+                <p>show temperature in</p>
+                <select id="temperatureSelect">
+                    <option value="c" selected>°c</option>
+                    <option value="f">°f</option>
+                </select>
+            </div>
+        </div>
+        <section class="dayCard">
+            <h3 class="dayCard--day">Today</h3>
+            <div class="dayCard--img--container">
+                <img class="dayCard--img" src="assets/rain.png" alt="rain image">
+            </div>
+            <P class="dayCard--description">some rain</P>
+            <div class="dayCard--Temps--container">
+                <span class="dayCard--maxTemp">24°</span>
+                <span class="dayCard--minTemp">18°</span>
+            </div>
+        </section>
+        <section class="dayCard">
+            <h3 class="dayCard--day">Tomorrow</h3>
+            <div class="dayCard--img--container">
+                <img class="dayCard--img" src="assets/sunny.png" alt="sunny image">
+            </div>
+            <P class="dayCard--description">some sun</P>
+            <div class="dayCard--Temps--container">
+                <span class="dayCard--maxTemp">27°</span>
+                <span class="dayCard--minTemp">19°</span>
+            </div>
+        </section>
+        <section class="dayCard">
+            <h3 class="dayCard--day">Friday</h3>
+            <div class="dayCard--img--container">
+                <img class="dayCard--img" src="assets/cloud.png" alt="cloud image">
+            </div>
+            <P class="dayCard--description">some clouds</P>
+            <div class="dayCard--Temps--container">
+                <span class="dayCard--maxTemp">21°</span>
+                <span class="dayCard--minTemp">16°</span>
+            </div>
+        </section>
+        <section class="dayCard">
+            <h3 class="dayCard--day">Saturday</h3>
+            <div class="dayCard--img--container">
+                <img class="dayCard--img" src="assets/sunny.png" alt="sunny image">
+            </div>
+            <P class="dayCard--description">some sun</P>
+            <div class="dayCard--Temps--container">
+                <span class="dayCard--maxTemp">26°</span>
+                <span class="dayCard--minTemp">21°</span>
+            </div>
+        </section>
+    </main>
+    <div class="cookiesAlert">
+        <img src="assets/cookie.png" alt="cookie image">
+        <div>
+            <h4>Stop! Cookie time</h4>
+            <p>we use cookies (sadly no the edible ones) to personalize content and ads to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <button>I Accept</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

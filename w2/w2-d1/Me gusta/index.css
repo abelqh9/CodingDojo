@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+body, h1, h2, h3, p{
+    margin: 0;
+}
+button{
+    cursor: pointer;
+}
+
+
+body{
+    padding: 0 20rem;
+    font-family: 'Itim', cursive;
+}
+
+
+header{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+header h2{
+    font-size: 2rem;
+}
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+main h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+.principalUserCard{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.principalUserCard img{
+    max-width: 100%;
+}
+.principalUserCard a{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+.principalUserCard h2{
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.othersUsersCards-container{
+    width: 70%;
+}
+.otherUserCard{
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+.otherUser-name{
+    font-size: 1.5rem;
+    width: 55%;
+}
+.otherUser-likes{
+    font-size: 1.25rem;
+    width: 30%;
+}
+.otherUser-likeBtn{
+    font-size: 1.25rem;
+    width: 15%;
+    background-color:rgb(255, 236, 62) ;
+}
+.otherUser-text{
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    width: 90%;
+}
+
+
+.generalBorder{
+    border: 4px solid black;
+}
+.genrealShadow{
+    box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
+}
+/* .generalPading{
+    border: 4px solid black;
+} */

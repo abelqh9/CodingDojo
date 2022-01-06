@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Itim', cursive;
+}
+
+.card{
+    border: 4px solid rgb(214, 213, 213);
+    width: 45vw;
+    height: 22.5rem;
+}
+
+.card-header{
+    height: 30%;
+    padding: 1rem 2rem;
+    background-color: rgb(63, 180, 184);
+    position: relative;
+}
+
+.card-header img{
+    position: absolute;
+    width: 5rem;
+    background-color: white;
+    border-radius: 50%;
+    border: 4px solid black;
+    padding: 0.25rem;
+    top: 4rem;
+    outline: rgb(214, 213, 213) 2px solid;
+    outline-offset: 2px;
+}
+
+.card-main{
+    height: 70%;
+    padding: 1rem 2rem;
+    padding-top: 3rem;
+}
+.card-main h1{
+    font-size: 2rem;
+}
+.locationImage{
+    width: 1rem; 
+}
+.configImage{
+    width: 1.5rem; 
+}
+a{
+    vertical-align: top;
+}

@@ -1,0 +1,213 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+}
+body, h1, h2, p, a{
+    margin: 0;
+}
+body{
+    font-family: 'Itim', cursive;
+}
+
+/* HEADER */
+.header{
+    background-color: black;
+    color: white;
+    padding: 1rem 22.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.header-title{
+    font-size: 2.25rem;
+    display: flex;
+    align-items: center;
+}
+.header-links{
+    width: 20rem;
+    padding: 0;
+    margin: 0;
+    margin-right: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+}
+.header-links a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.15rem;
+    opacity: 0.75;
+}
+.header-links .active{
+    font-weight: bold;
+    opacity: 1;
+}
+.header-btn{
+    height: 2rem;
+    background: none;
+    outline: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-family: 'Itim', sans-serif;
+    font-size: 1.15rem;
+    font-weight: bold;
+    background-color: rgb(4, 194, 194);
+}
+
+/* MAIN - ASIDE */
+.main-aside-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0rem 22.5rem;
+}
+.main{
+    width: 56%;
+}
+
+/* PERSONAL CARD */
+.personal-card{
+    width: 100%;
+    height: 18rem;
+    margin-bottom: 2rem;
+}
+.personal-card-header{
+    height: 30%;
+    padding: 1rem 1rem;
+    background-color: rgb(63, 180, 184);
+    position: relative;
+}
+.personal-card-header img{
+    position: absolute;
+    width: 5rem;
+    background-color: white;
+    border-radius: 50%;
+    border: 4px solid black;
+    padding: 0.25rem;
+    top: 2.75rem;
+    outline: rgb(214, 213, 213) 2px solid;
+    outline-offset: 2px;
+}
+.personal-card-main{
+    height: 70%;
+    padding: 1rem 1rem;
+    padding-top: 2.5rem;
+}
+.personal-card-main h1{
+    font-size: 2rem;
+}
+.locationImage{
+    width: 1rem; 
+}
+.configImage{
+    width: 1.5rem; 
+}
+a{
+    vertical-align: top;
+}
+main h2{
+    margin-bottom: 0.3rem;
+}
+main p{
+    margin-bottom: 0.25rem;
+}
+
+/* EDUCATION CARD */
+.education-card{
+    width: 100%; 
+}
+.education-card .p1{
+    font-size: 1.35rem;
+}
+.education-card .p2{
+    font-size: 1.1rem;
+    opacity: 0.75;
+}
+.education-card .p3{
+    font-size: 1.1rem;
+}
+
+/* REQUESTS CARD */
+.requests-card{
+    /* height: 8.5rem; */
+    max-height: 8.5rem;
+    margin-bottom: 2rem;
+}
+
+/* CONNECTIONS CARD */
+.connections-card{
+    height: 15.85rem;
+}
+.connections-card-link{
+    display: block;
+    border-top: 4px solid rgb(214, 213, 213);
+}
+
+/* - REUSABLE CLASSES - */
+.cardBorder{
+    border: 4px solid rgb(214, 213, 213);
+    border-radius: 1.5%;
+}
+.cardTittle{
+    padding: 0.5rem 1rem;
+    background-color: rgb(61, 55, 55);
+    font-weight: lighter;
+    font-size: 1.25rem;
+    color: white;
+}
+.cardPadding{
+    padding: 0.5rem 1rem;
+}
+.opacity{
+    opacity: 0.5;
+}
+.cPointer{
+    cursor: pointer;
+}
+.counterSpan{
+    display: inline-block;
+    background-color: hsl(0, 0%, 35%);
+    padding: 0.25rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    text-align: center;
+    min-width: 2rem;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.user img{
+    width: 1.75rem;
+}
+.user img[alt="user image"]{
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 0.15rem;
+}
+.user p{
+    font-size: 1.25rem;
+    width: 5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.userRequest{
+    justify-content: space-between;
+}
+.userConected img[alt="user image"]{
+    margin-right: 0.5rem;
+}
+
+
+
+
+.dNone{
+    display: none;
+}

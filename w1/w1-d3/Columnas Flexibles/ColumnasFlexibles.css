@@ -1,0 +1,30 @@
+body{
+    /* background-color: slategray; */
+    margin: 0;
+    padding-top: 2rem;
+}
+
+.row{
+    display: flex;
+    color: white;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.row div{
+    background-color: rgb(0, 216, 216);
+    background-color: darkcyan;
+    padding: 1rem;
+}
+
+.col{
+    flex-grow: 1;
+}
+
+.col-2{
+    flex-grow: 2;
+}
+
+.col-3{
+    flex-grow: 3;
+}
