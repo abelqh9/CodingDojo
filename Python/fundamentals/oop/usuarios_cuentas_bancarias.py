@@ -38,50 +38,51 @@ class Usuario:
     # Actualizar el método hacer_depósito de la clase Usuario
     def hacer_deposito(self, cuenta, amount):
         self.cuentas[cuenta].deposito(amount)
+        return self
 
     # Actualizar el método hacer_retiro de la clase Usuario
     def hacer_retiro(self, cuenta, amount):
         self.cuentas[cuenta].retiro(amount)
+        return self
 
     # Actualizar el método mostrar_balance_usuario de la clase Usuario
     def mostrar_balance_usuario(self, cuenta):
         self.cuentas[cuenta].mostrar_info_cuenta()
+        return self
     
     def transferir_dinero(self, other_user, other_user_cuenta, cuenta, amount):
-        # print(self.cuentas[cuenta])
         self.cuentas[cuenta].retiro(amount)
         other_user.cuentas[other_user_cuenta].deposito(amount)
+        return self
 
     def crear_cuenta(self, nombre_cuenta, interes, balance):
         self.cuentas[nombre_cuenta] = CuentaBancaria(interes, balance)
+        return self
 
 
 print("se creó el usuario 1:")
-user_1 = Usuario("Bryan", "correoBryan@gmail.com")
 print("cuenta principal - usuario 1:")
+user_1 = Usuario("Bryan", "correoBryan@gmail.com")
 user_1.mostrar_balance_usuario("principal")
 
 print("el usuario 1 creó una cuenta secundaria")
-user_1.crear_cuenta("secundaria", 2, 1000)
 print("cuenta secundaria - usuario 1:")
-user_1.mostrar_balance_usuario("secundaria")
+user_1.crear_cuenta("secundaria", 2, 1000).mostrar_balance_usuario("secundaria")
 
 print("el usuario 1 hizo un retiro de la cuenta secundaria")
-user_1.hacer_retiro("secundaria", 200)
 print("cuenta secundaria - usuario 1:")
-user_1.mostrar_balance_usuario("secundaria")
+user_1.hacer_retiro("secundaria", 200).mostrar_balance_usuario("secundaria")
 
 print("el usuario 1 hizo un deposito a la cuenta principal")
-user_1.hacer_deposito("principal", 100)
-print("cuenta secundaria - usuario 1:")
-user_1.mostrar_balance_usuario("principal")
+print("cuenta principal - usuario 1:")
+user_1.hacer_deposito("principal", 100).mostrar_balance_usuario("principal")
 
 print("se creó el usuario 2")
-user_2 = Usuario("Abel", "correoAbel@gmail.com")
 print("cuenta principal - usuario 2:")
+user_2 = Usuario("Abel", "correoAbel@gmail.com")
 user_2.mostrar_balance_usuario("principal")
 
 print("el usuario 1 tranfirió dinero de su cuenta secundaria a la cuenta principal del usuario 2")
-user_1.transferir_dinero(user_2, "principal", "secundaria", 300)
 print("cuenta principal - usuario 2:")
+user_1.transferir_dinero(user_2, "principal", "secundaria", 300)
 user_2.mostrar_balance_usuario("principal")
