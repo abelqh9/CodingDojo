@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    <title>Tablero de ajedrez</title>
+</head>
+<body>
+    <h1>***Checkerboard***</h1>
+    <div class="boardContainer">
+        {% for itemY in range(y) %}
+            {% if itemY % 2 != 0 %}
+                <div class="boardRow">
+                    {% for itemX in range(x) %}
+                        {% if itemX % 2 != 0 %}
+                            <div class="boardItem" {{"style=background-color:" + oddColor}}></div>
+                        {% else %}
+                            <div class="boardItem" {{"style=background-color:" + evenColor}}></div>    
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="boardRow">
+                    {% for itemX in range(x) %}
+                        {% if itemX % 2 != 0 %}
+                            <div class="boardItem" {{"style=background-color:" + evenColor}}></div>
+                        {% else %}
+                            <div class="boardItem" {{"style=background-color:" + oddColor}}></div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</body>
+</html>

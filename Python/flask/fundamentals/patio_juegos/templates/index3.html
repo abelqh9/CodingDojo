@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patio de juegos</title>
+    <style>
+        body{
+            margin: 0%; 
+            padding: 5rem 10rem; 
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+        h1{
+            text-align: center;
+            width: 100%;
+        }
+        .box{
+            width: 12.5rem;
+            height: 12.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    {% for item in range(num) %}
+        <div class="box" style="background-color: {{color}}"></div>
+    {% endfor %}
+</body>
+</html>
