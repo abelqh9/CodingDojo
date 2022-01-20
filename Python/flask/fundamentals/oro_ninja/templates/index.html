@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <title>Oro Ninja</title>
+</head>
+<body>
+    <header>
+        <h1><span>Your Gold:</span><span class="titleCounter generalBorder">{{ninja_gold}}</span></h1>
+    </header>
+    <main>
+        <div class="buildingCard generalBorder">
+            <h2>Farm</h2>
+            <p>(earns 10-20 golds)</p>
+            <form action="/process_money" method="post">
+                <input type="hidden" name="building" value="farm" />
+                <input type="submit" value="Find Gold!"/>
+            </form>
+        </div>
+        <div class="buildingCard generalBorder">
+            <h2>Cave</h2>
+            <p>(earns 5-10 golds)</p>
+            <form action="/process_money" method="post">
+                <input type="hidden" name="building" value="cave" />
+                <input type="submit" value="Find Gold!"/>
+            </form>
+        </div>
+        <div class="buildingCard generalBorder">
+            <h2>House</h2>
+            <p>(earns 2-5 golds)</p>
+            <form action="/process_money" method="post">
+                <input type="hidden" name="building" value="house" />
+                <input type="submit" value="Find Gold!"/>
+            </form>
+        </div>
+        <div class="buildingCard generalBorder">
+            <h2>Casino</h2>
+            <p>(earns 0-50 golds)</p>
+            <form action="/process_money" method="post">
+                <input type="hidden" name="building" value="casino" />
+                <input type="submit" value="Find Gold!"/>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <span>Activities</span>
+        <div class="activities_chart generalBorder">
+            {% for text in activities_texts %}
+                {%- if text[0] -%}
+                    <p class="goodText">{{text[1]}}</p>
+                {%- else -%}
+                    <p class="wrongText">{{text[1]}}</p>
+                {%- endif %}</li>
+            {% endfor %}
+        </div>
+    </footer>
+</body>
+</html>

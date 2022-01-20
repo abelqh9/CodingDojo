@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de números genial</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
+        p{
+            font-size: 1.25rem;
+        }
+        form{
+            width: 15rem;
+            background-color: rgb(31, 31, 31);
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            gap: 0.5rem;
+        }
+        label{
+            color: rgb(251, 255, 0);
+        }
+        input[type="text"]{
+            border-radius: 5px;
+            outline: none;
+            width: 80%;
+            font-weight: bold;
+            padding: 0.25rem;
+            font-size: 1rem;
+            height: 1.35rem;
+            border: none;
+        }
+        input[type="submit"]{
+            background-color: rgb(251, 255, 0);
+            border: none;
+            width: 7.5rem;
+            height: 2.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Great Number Game!</h1>
+    <p>I am thinking of a number between 1 and 100</p>
+    <form action="/guess" method="post">
+        <label for="input">Taker a guess!!!</label>
+        <input id="input" type="text" name="number">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

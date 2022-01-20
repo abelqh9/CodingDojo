@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Dojo</title>
+    <style>
+        body{
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            padding: 1.5rem;
+            text-align: left;
+            background-color: rgb(53, 53, 53);
+            width: 20rem;
+        }
+        h1{
+            color: gold;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        label{
+            color: white;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        input, textarea, select{
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+            padding: 0.35rem;
+            resize: none;
+        }
+        textarea{
+            height: 7.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Dojo Survey</h1>
+        <form action="/process" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+
+            <label for="dojoLocation">Dojo Location:</label>
+            <select name="dojoLocation" id="dojoLocation">
+                <option value="">-- Select A Location --</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Online">Online</option>
+                <option value="Burbank">Burbank</option>
+                <option value="Bellevue">Bellevue</option>
+            </select>
+
+            <label for="favLanguage">Favorite Language:</label>
+            <select name="favLanguage" id="favLanguage">
+                <option value="">-- Select A Language --</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="C#">C#</option>
+            </select>
+
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" cols="25" rows="10"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
