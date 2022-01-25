@@ -1,0 +1,12 @@
+#SELECT * 
+#FROM users
+
+#INSERT INTO users (first_name, last_name, handle, birthday, created_at, updated_at)
+#VALUES('Abel', 'Quezada', 'abelqh9', DATE("2002-01-09") ,NOW(), NOW());
+
+#UPDATE users 
+#SET handle = 'abelQH9' 
+#WHERE id = 6;
+
+#DELETE FROM users
+#WHERE id = 6;

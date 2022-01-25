@@ -1,0 +1,52 @@
+
+# crea 3 dojos nuevos
+#INSERT INTO dojos (name, created_at, updated_at)
+#VALUES
+	#("dojoPiura", NOW(), NOW()),
+    #("dojoLima", NOW(), NOW()),
+    #("dojoArequipa", NOW(), NOW());
+    
+# elimina los 3 dojos que acabas de crear
+#DELETE FROM dojos
+#WHERE id >= 1
+    
+# crea 3 dojos nuevos
+#INSERT INTO dojos (name, created_at, updated_at)
+#VALUES
+	#("dojoPerú", NOW(), NOW()),
+    #("dojoChile", NOW(), NOW()),
+    #("dojoEcuador", NOW(), NOW());
+    
+# crea 3 ninjas que pertenezcan al primer dojo
+#INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+#VALUES
+	#("Abel", "Quezada", 20, NOW(), NOW(), 4),
+    #("Leo", "Quezada", 21, NOW(), NOW(), 4),
+    #("Bryan", "Quezada", 28, NOW(), NOW(), 4);
+    
+# crea 3 ninjas que pertenezcan al segundo dojo
+#INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+#VALUES
+	#("Sebastian", "Hidalgo", 19, NOW(), NOW(), 5),
+    #("Ariana", "Hidalgo", 16, NOW(), NOW(), 5),
+    #("Joaquin", "Hidalgo", 15, NOW(), NOW(), 5);
+    
+# crea 3 ninjas que pertenezcan al tercer dojo
+#INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+#VALUES
+	#("Marisabel", "Hidalgo", 25, NOW(), NOW(), 6),
+    #("claudia", "Hidalgo", 23, NOW(), NOW(), 6),
+    #("Aaron", "Hidalgo", 21, NOW(), NOW(), 6);
+    
+# recupera todos los ninjas del primer dojo
+#SELECT * FROM ninjas
+#WHERE dojo_id = 4
+
+# recupera todos los ninjas del ultimo dojo
+#SELECT * FROM ninjas
+#WHERE dojo_id = 6
+
+# recupera el dojo del último ninja
+#SELECT * FROM dojos
+#JOIN ninjas ON dojos.id = ninjas.dojo_id
+#WHERE ninjas.id = 9

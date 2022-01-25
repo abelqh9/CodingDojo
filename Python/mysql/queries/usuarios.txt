@@ -1,0 +1,38 @@
+
+# crea 3 usuarios nuevos
+#INSERT INTO users (first_name, last_name, email, created_at, updated_at)
+#VALUES
+	#("Abel", "Quezada", "abelemail@gmail.com", NOW(), NOW()),
+    #("Leo", "Quezada", "leoemail@gmail.com", NOW(), NOW()),
+    #("Bryan", "Quezada", "bryanemail@gmail.com", NOW(), NOW());
+
+# recupera todos los usuarios
+#SELECT * FROM users
+
+# recupera el primer usuario que usa su dirección de correo electrónico
+#SELECT * FROM users
+#WHERE email IS NOT NULL
+#LIMIT 1;
+
+# recupera el último usuario que usa su id
+#SELECT * FROM users
+#WHERE id IS NOT NULL
+#ORDER BY id DESC
+#LIMIT 1;
+
+# cambia el usuario con id=3 para que su apellido sea Panqueques
+#UPDATE users
+#SET last_name = "Panqueques"
+#WHERE id = 3
+
+# elimina el usuario con id=2 de la base de datos
+#DELETE FROM users
+#WHERE id = 2
+
+# obtén todos los usuarios, ordenados por su nombre
+#SELECT * FROM users
+#ORDER BY first_name
+
+# BONUS: obtén todos los usuarios, ordenados por su nombre en orden descendente
+#SELECT * FROM users
+#ORDER BY first_name DESC
