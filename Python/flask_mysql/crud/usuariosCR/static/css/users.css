@@ -1,0 +1,9 @@
+body{
+    min-height: 100vh;
+    background-color: rgb(58, 58, 58);
+    padding: 10vh 15rem;
+}
+
+h1, a{
+    color: white;
+}

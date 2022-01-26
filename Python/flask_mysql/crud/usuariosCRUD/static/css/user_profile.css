@@ -1,0 +1,22 @@
+body{
+    min-height: 100vh;
+    background-color: rgb(58, 58, 58);
+    padding: 15vh 30rem;
+}
+
+*{
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+button[type="submit"]{
+    font-weight: 700;
+}
+form{
+    display: inline;
+}
