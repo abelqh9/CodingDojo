@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+    <title>Encuesta Dojo</title>
+</head>
+<body>
+    <div>
+        <h1>{{comment["name"]}}</h1>
+        <p>Dojo Location: {{comment["dojo_location"]}}</p>
+        <p>Favorite Language: {{comment["favorite_language"]}}</p>
+        <p>Comments: {{comment["comment"]}}</p>
+        <a href="/">Home</a>
+    </div>
+</body>
+</html>

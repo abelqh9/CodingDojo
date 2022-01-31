@@ -1,0 +1,58 @@
+body{
+    margin: 0%;
+    min-height: 100vh;
+    background-color: rgb(119, 0, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-items: flex-start;
+}
+
+label, label input{
+    font-size: 1.5rem;
+}
+
+.classicBtn{
+    cursor: pointer;
+    border: none;
+    padding: 0.25rem 0.75rem;
+    margin: 1rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(37, 37, 255);
+    box-shadow: 3px 4px 0 0 black;
+}
+
+.flashes{
+    width: 20rem;
+    font-size: 1.75rem;
+    list-style: none;
+    border: 3px solid black;
+    padding: 0%;
+}
+
+.success{
+    background-color: rgb(0, 192, 0);
+    color: black;
+    font-weight: 600;
+}
+.error{
+    background-color: red;
+    color: white;
+}

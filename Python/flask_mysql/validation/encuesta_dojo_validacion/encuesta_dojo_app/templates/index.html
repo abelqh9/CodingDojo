@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <title>Encuesta Dojo</title>
+</head>
+<body>
+    <div>
+        <h1>Dojo Survey</h1>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}                       
+                {% for message in messages %}       
+                    <p style="color: red;">{{message}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <form action="/process" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+
+            <label for="dojoLocation">Dojo Location:</label>
+            <select name="dojo_location" id="dojoLocation">
+                <option value="">-- Select A Location --</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Online">Online</option>
+                <option value="Burbank">Burbank</option>
+                <option value="Bellevue">Bellevue</option>
+            </select>
+
+            <label for="favLanguage">Favorite Language:</label>
+            <select name="favorite_language" id="favLanguage">
+                <option value="">-- Select A Language --</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="C#">C#</option>
+            </select>
+
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" cols="25" rows="10"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
