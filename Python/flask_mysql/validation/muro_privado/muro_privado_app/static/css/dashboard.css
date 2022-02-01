@@ -1,0 +1,154 @@
+h1, h2, p{
+    margin: 0;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    padding: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid white;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    /* height: 3.5rem; */
+    height: 9.5vh;
+}
+header h1{
+    font-size: 3rem;
+    font-size: 2.5rem;
+    color: gold;
+    margin: 0;
+}
+header span{
+    font-size: 1.25rem;
+}
+header div{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+main{
+    padding: 0 3rem;
+    display: flex;
+}
+
+
+section{
+    width: 50%;
+    height: 70vh;
+}
+.messages_section{
+    padding-right: 2rem;
+    border-right: 2px solid white;
+}
+.users_section{
+    padding-left: 2rem;
+    border-left: 2px solid white;
+}
+.section_title_container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+.section_title_container h2{
+    font-size: 1.75rem;
+    border-bottom: 2px white solid;
+    margin-bottom: 0.5rem;
+}
+.section_title_container p{
+    font-size: 1.05rem;
+    color: yellowgreen;
+}
+
+.messages_container{
+    width: 100%;
+}
+.message_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.message_container .time{
+    color: hotpink;
+}
+.message_container div{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.message_container div span{
+    align-self: start;
+    margin-bottom: 0.5rem;
+}
+.message_container div p{
+    align-self: center;
+}
+.message_container button{
+    cursor: pointer;
+}
+
+
+.user_container{
+    margin-top: 0.75rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    gap: 0.75rem;
+    font-weight: 600;
+    color: gold;
+}
+.user_container label{
+    width: 3rem;
+}
+.user_container textarea{
+    resize: none;
+    font-size: 1rem;
+}
+
+
+.classicBtn{
+    cursor: pointer;
+    border: none;
+    padding: 0.35rem 0.75rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(37, 37, 255);
+    box-shadow: 3px 4px 0 0 black;
+    width: initial;
+}
+.errors_container{
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    background-color: rgb(255, 118, 118);
+    color: rgb(255, 0, 43);
+    padding: 1rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    align-self: center;
+    font-size: 0.85rem;
+    list-style: none;
+}
