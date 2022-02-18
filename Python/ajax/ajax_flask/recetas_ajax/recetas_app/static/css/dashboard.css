@@ -1,0 +1,114 @@
+h1, h2, p{
+    margin: 0;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    padding: 2rem 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    height: 9.5vh;
+}
+header h2{
+    font-size: 2.75rem;
+    color: gold;
+    margin: 0;
+}
+header div{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+main{
+    display: flex;
+}
+h2{
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.actions_td{
+    display: flex;
+    gap: 0.35rem;
+}
+
+.recipes_section{
+    width: 60%;
+    padding-right: 10rem;
+}
+.add_recipes_section{
+    width: 40%;
+    padding-right: 10rem;
+}
+.add_recipes_section form{
+    display: flex;
+    flex-direction: column;
+}
+.add_recipes_section label, .add_recipes_section span{
+    margin-bottom: 0.25rem;
+}
+.add_recipes_section input, .add_recipes_section textarea{
+    margin-bottom: 0.75rem;
+}
+
+.under_30_container{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.classicBtn{
+    cursor: pointer;
+    border: none;
+    padding: 0.35rem 0.75rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(37, 37, 255);
+    box-shadow: 3px 4px 0 0 black;
+    width: initial;
+    text-decoration: none;
+}
+
+.errors_container{
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    background-color: rgb(255, 118, 118);
+    color: rgb(255, 0, 0);
+    padding: 1rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    align-self: center;
+    font-size: 0.85rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.link_style{
+    background: none;
+    text-decoration: underline;
+    color: #0d6efd;
+    border: none;
+}

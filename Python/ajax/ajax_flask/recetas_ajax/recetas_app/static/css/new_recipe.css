@@ -1,0 +1,94 @@
+h1, h2, p{
+    margin: 0;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    padding: 2.5rem 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    height: 9.5vh;
+}
+header h2{
+    font-size: 2.75rem;
+    color: gold;
+    margin: 0;
+}
+header div{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+main form{
+    display: flex;
+    justify-content: space-between;
+}
+main form div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+main form label{
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+main form input, main form textarea{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    resize: none;
+}
+main form input[type="submit"]{
+    margin-top: 1rem;
+}
+
+.under_30_container{
+    width: 12.5rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.under_30_container span{
+    width: 100%;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+.under_30_container div{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.classicBtn{
+    cursor: pointer;
+    border: none;
+    padding: 0.35rem 0.75rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(37, 37, 255);
+    box-shadow: 3px 4px 0 0 black;
+    width: initial;
+    text-decoration: none;
+}
