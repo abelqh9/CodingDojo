@@ -20,5 +20,6 @@
 				</p>
 			</section>
 		</main>
+			<footer><a href="/omikuji">Go Back</a></footer>
 	</body>
 </html>
