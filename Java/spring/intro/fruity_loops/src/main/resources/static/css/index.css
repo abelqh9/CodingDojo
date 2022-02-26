@@ -1,0 +1,33 @@
+@charset "ISO-8859-1";
+
+body{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-family:arial;
+	flex-direction:column;
+}
+
+h1{
+	color: red;
+	font-size: 3rem;
+}
+
+.items_container{
+	width: 35rem;
+	background-color:red;
+	text-align: left;
+	padding:1.5rem;
+    border-collapse: separate;
+    border-spacing: 0 0.15rem;
+}
+
+.items_container tr{
+	background-color:white;
+	height: 3rem;
+	font-size:1.5rem;
+}
+
+.items_container th, .items_container td{
+   	padding: 0.5rem;
+}
