@@ -1,0 +1,42 @@
+@charset "ISO-8859-1";
+
+body{
+	padding: 3rem 25rem;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom:2rem;
+	align-items: center;
+}
+
+.main_options{
+	display: flex;
+	gap:1rem;
+}
+
+ul{	
+	padding:0;
+}
+
+li{
+	font-size: 1.25rem;
+	list-style:none;
+}
+
+li b{
+	display:inline-block;
+	width: 7.5rem;
+}
+
+.a{
+	border:none;
+	background:none;
+	outline:none;
+	text-decoration:underline;
+	padding:0;
+}

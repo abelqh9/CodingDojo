@@ -1,0 +1,51 @@
+@charset "ISO-8859-1";
+
+body{
+	font-family:arial;
+	padding: 0rem 20rem;
+}
+
+header{
+	display:flex;
+	justify-content:space-between;
+	margin-top:2rem;
+}
+
+header a{
+	font-size:1.25rem;
+}
+
+main{
+	display:flex;
+	justify-content:center;
+}
+
+ul{
+	display:inline-flex;
+	flex-direction:column;
+	gap:0.5rem;
+	padding:0;
+	padding:1rem;
+	list-style:none;
+	border: 2px solid black;
+}
+
+li{
+	font-size:1.15rem;
+}
+
+ul b{
+	display: inline-block;
+}
+
+main{
+	margin-top:3.5rem;
+}
+
+.a{
+	border:none;
+	background:none;
+	outline:none;
+	text-decoration:underline;
+	padding:0;
+}

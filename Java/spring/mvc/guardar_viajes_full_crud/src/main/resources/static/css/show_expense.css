@@ -1,0 +1,37 @@
+@charset "ISO-8859-1";
+
+body{
+	padding: 3rem 10rem;
+	display: flex;
+	justify-content: center;
+}
+
+main{
+	width: 30rem;
+}
+
+h1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom:2rem;
+}
+
+h1 a{
+	font-size: 1.25rem;
+}
+
+ul{	
+	padding:0;
+}
+
+li{
+	font-size: 1.25rem;
+	list-style:none;
+}
+
+li b{
+	display:inline-block;
+	width: 10rem;
+}
+

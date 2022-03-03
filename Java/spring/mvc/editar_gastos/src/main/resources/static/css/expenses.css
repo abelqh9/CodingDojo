@@ -1,0 +1,30 @@
+@charset "ISO-8859-1";
+
+body{
+	padding: 3rem 10rem;
+}
+
+main{	
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.table{
+	margin-bottom: 3rem;
+	width: 30rem;
+}
+
+form div{
+	display: flex;
+	margin-bottom: 1rem;
+}
+
+label{
+	width: 9.5rem;
+}
+
+.alert{
+	display: flex;
+	flex-direction:column;
+}

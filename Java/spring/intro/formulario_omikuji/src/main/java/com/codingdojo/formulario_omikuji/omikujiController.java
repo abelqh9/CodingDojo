@@ -19,12 +19,12 @@ public class omikujiController {
 	@PostMapping("/omikuji/process")
 	public String omikujiProcess(
 			HttpSession session, 
-			@RequestParam(value="number") Integer number,
-			@RequestParam(value="city_name") String city_name,
-			@RequestParam(value="person_name") String person_name,
-			@RequestParam(value="hobby") String hobby,
-			@RequestParam(value="living_thing") String living_thing,
-			@RequestParam(value="something_nice") String something_nice) {
+			@RequestParam(value="number", required =false) Integer number,
+			@RequestParam(value="city_name", required =false) String city_name,
+			@RequestParam(value="person_name", required =false) String person_name,
+			@RequestParam(value="hobby", required =false) String hobby,
+			@RequestParam(value="living_thing", required =false) String living_thing,
+			@RequestParam(value="something_nice", required =false) String something_nice) {
 		
 		session.setAttribute("number", number);
 		session.setAttribute("city_name", city_name);

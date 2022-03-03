@@ -1,0 +1,43 @@
+@charset "ISO-8859-1";
+
+body{
+	font-family:arial;
+	padding: 0rem 20rem;
+}
+
+header{
+	display:flex;
+	justify-content:flex-end;
+	margin-top:2rem;
+}
+
+header a, .a{
+	font-size:1.25rem;
+}
+
+ul{
+	padding:0;
+	list-style:none;
+}
+
+li{
+	margin-bottom:1rem;
+	font-size:1.15rem;
+}
+
+ul b{
+	display: inline-block;
+	width:7.5rem;
+}
+
+main{
+	margin-top:3.5rem;
+}
+
+.a{
+	border:none;
+	background:none;
+	outline:none;
+	text-decoration:underline;
+	padding:0;
+}

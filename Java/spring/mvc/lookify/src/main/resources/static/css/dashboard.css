@@ -1,0 +1,33 @@
+@charset "ISO-8859-1";
+
+body{
+	font-family:arial;
+	padding: 0rem 20rem;
+}
+
+header{
+	display:flex;
+	justify-content:space-between;
+	margin-top:2rem;
+}
+
+header nav{
+	display:flex;
+	gap:3rem;
+}
+
+header a{
+	font-size:1.25rem;
+}
+
+main{
+	margin-top:3.5rem;
+}
+
+.a{
+	border:none;
+	background:none;
+	outline:none;
+	text-decoration:underline;
+	padding:0;
+}

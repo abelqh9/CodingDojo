@@ -1,0 +1,35 @@
+@charset "ISO-8859-1";
+
+body{
+	font-family:arial;
+	padding: 0rem 20rem;
+}
+
+header{
+	display:flex;
+	justify-content:flex-end;
+	margin-top:2rem;
+}
+
+header a{
+	font-size:1.25rem;
+}
+
+main{
+	margin-top:3.5rem;
+}
+
+form div{
+	display:flex;
+}
+
+.text-danger{
+	display:block;
+	margin-top:0.25rem;
+	margin-bottom:1.5rem;
+	font-size:0.95rem;
+}
+
+form label{
+	width:7.5rem;
+}
