@@ -1,0 +1,22 @@
+@charset "ISO-8859-1";
+
+body{
+	padding:5rem 10rem;
+}
+
+form{
+	margin-top:1.5rem;
+	display:flex;
+	flex-direction:column;
+	align-items: flex-start;
+	gap:1rem;
+}
+
+form div{
+	display:inline-flex;
+	align-items:center;
+}
+
+form label{
+	width:5rem;
+}
