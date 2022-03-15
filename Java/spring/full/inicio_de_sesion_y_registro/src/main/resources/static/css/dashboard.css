@@ -1,0 +1,12 @@
+@charset "ISO-8859-1";
+
+body{
+	padding: 3rem 15rem;
+	background-color:black;
+	color: white;
+}
+
+main{
+	display: flex;
+	justify-content:space-between;
+}

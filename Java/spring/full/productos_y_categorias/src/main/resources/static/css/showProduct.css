@@ -1,0 +1,28 @@
+@charset "ISO-8859-1";
+
+body{
+	background-color:black;
+	color:white;
+	padding: 5rem 25rem 5rem 10rem;
+}
+
+main{
+	margin-top:2rem;
+	display:flex;
+	justify-content:space-between;
+}
+
+
+form div{
+	display:flex;
+	margin-top:1rem;
+}
+
+form label{
+	display:inline-block;
+	width:15rem;
+}
+
+form input[type="submit"]{
+	margin-top:1rem;
+}

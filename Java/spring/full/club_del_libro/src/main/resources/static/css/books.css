@@ -1,0 +1,34 @@
+@charset "ISO-8859-1";
+
+body{
+	padding: 3rem 15rem;
+	background-color:black;
+	color: white;
+}
+
+header{
+	display: flex;
+	justify-content:space-between;
+}
+
+main{
+	margin-top:2rem;
+	display: flex;
+	justify-content:space-between;
+}
+
+header form{
+	text-align:right;	
+}
+.table{
+	text-align:center;
+}
+
+.a{
+	border:none;
+	background:none;
+	color: #0d6efd;
+	text-decoration:underline;
+	outline:none;
+	padding: 0;
+}

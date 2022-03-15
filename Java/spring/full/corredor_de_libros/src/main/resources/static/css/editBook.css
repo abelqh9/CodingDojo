@@ -1,0 +1,36 @@
+@charset "ISO-8859-1";
+
+body{
+	padding: 3rem 15rem;
+	background-color:black;
+	color: white;
+}
+
+header{
+		display: flex;
+	justify-content:space-between;
+}
+
+main{
+	margin-top:2rem;
+	display: flex;
+	justify-content:space-between;
+}
+
+main section{
+	width:40%;
+}
+
+main form div{
+	display:flex;
+	margin-bottom:1rem
+}
+
+main form label{
+	width:10rem;
+}
+
+.text-danger{
+	display:inline-block;
+	margin-bottom:0.5rem;
+}

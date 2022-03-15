@@ -1,0 +1,37 @@
+@charset "ISO-8859-1";
+
+body{
+	padding: 3rem 15rem;
+	background-color:black;
+	color: white;
+}
+
+header{
+	display: flex;
+	justify-content:space-between;
+}
+
+main{
+	margin-top:2rem;
+}
+
+.book_user{
+	color:red;
+}
+
+.book_title{
+	color:purple;
+}
+
+.book_author{
+	color:green;
+}
+
+.book_thoughts{
+	display: inline-block;
+	min-width:30rem;
+	margin-top:3rem;
+	padding: 1rem 0;
+	border-top:1px solid white;
+	border-bottom:1px solid white;
+}
