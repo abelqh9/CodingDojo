@@ -1,0 +1,24 @@
+.App{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+ul{
+  width: 20rem;
+  list-style: none;
+  padding: 0%;
+}
+
+li{
+  padding-bottom: 0.5rem;
+}
+
+label{
+  display: inline-block;
+  width: 9rem;
+  padding-bottom: 0.5rem;
+}

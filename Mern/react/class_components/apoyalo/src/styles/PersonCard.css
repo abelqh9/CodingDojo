@@ -1,0 +1,13 @@
+.PersonCard{
+    width: 20rem;
+}
+
+.PersonCard h2{
+    margin-bottom: 0;
+}
+
+.PersonCard ul{
+    list-style: none;
+    padding: 0%;
+}
+

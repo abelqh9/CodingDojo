@@ -1,0 +1,10 @@
+.container{
+    width: 44rem;
+    height: 25.5rem;
+    background-color: #e06666;
+    border: 2px solid black;
+    padding: 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
