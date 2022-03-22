@@ -1,0 +1,9 @@
+.Pestania{
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+.Pestania:hover{
+    background-color: black;
+    color: white;
+}

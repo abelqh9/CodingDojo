@@ -1,0 +1,13 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7.5rem;
+  gap: 2rem;
+}
+
+.PestaniasView{
+  padding: 1rem;
+  border: 2px solid black;
+}

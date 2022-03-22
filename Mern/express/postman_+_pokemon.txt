@@ -1,0 +1,10 @@
+
+https://pokeapi.co/api/v2/pokemon/1
+
+https://pokeapi.co/api/v2/pokemon/35
+
+https://pokeapi.co/api/v2/pokemon/pikachu
+
+https://pokeapi.co/api/v2/pokemon/charizard
+
+https://pokeapi.co/api/v2/pokemon/meowth
