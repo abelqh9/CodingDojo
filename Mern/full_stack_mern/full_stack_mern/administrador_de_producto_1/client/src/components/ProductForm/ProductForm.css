@@ -1,0 +1,26 @@
+.ProductForm{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ProductForm div{
+    display: flex;
+    gap: 1rem;
+   
+}
+
+.ProductForm label{
+    width: 6rem;
+}
+
+.ProductForm input, .ProductForm textarea{
+    width: 12.5rem;
+}
+
+.ProductForm button{
+    width: 5rem;
+}
+

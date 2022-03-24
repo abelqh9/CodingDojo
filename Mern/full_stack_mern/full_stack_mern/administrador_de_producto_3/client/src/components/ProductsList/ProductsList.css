@@ -1,0 +1,10 @@
+.ProductsList ul{
+    margin: 0%;
+    padding: 0%;
+}
+.ProductsList li{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}

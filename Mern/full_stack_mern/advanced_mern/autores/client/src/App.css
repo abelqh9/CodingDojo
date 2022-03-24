@@ -1,0 +1,13 @@
+p{
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 5rem;
+  min-height: 100vh;
+}

@@ -1,0 +1,8 @@
+.AuthorsTable{
+    width: 20rem;
+}
+
+.buttons-row{
+    display: flex;
+    gap: 1rem;
+}
