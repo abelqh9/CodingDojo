@@ -1,0 +1,10 @@
+.Chat{
+    border: black 2px solid;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.messagesContainer{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,29 @@
+.Message{
+    max-width: 60%;
+    margin-bottom: 5vh;
+    border-radius: 10%;
+    padding: 3vw;
+}
+
+.Message p{
+    margin: 0;
+}
+
+.Message .name{
+    font-weight: bold;
+}
+
+.Message .text{
+    padding-left: 3vw;
+}
+
+.otherMessage{
+    text-align: left;
+    background-color: gainsboro;
+    align-self: flex-start;
+}
+.userMessage{
+    text-align: right;
+    background-color: greenyellow;
+    align-self: flex-end;
+}

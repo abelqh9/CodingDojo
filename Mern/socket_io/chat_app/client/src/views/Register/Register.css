@@ -1,0 +1,24 @@
+.Register{
+    border: black 2px solid;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.Register h2{
+    text-align: center;
+}
+
+.Register label{
+    margin-top: 1rem;
+}
+.Register div{
+    margin-top: 1.25rem;
+    display:flex;
+    gap:1rem;
+}
+.Register input{
+    /* height: 1rem; */
+}
+.Register button{
+    font-size: 0.75rem;
+}
